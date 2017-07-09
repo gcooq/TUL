@@ -64,7 +64,7 @@ def RNN(x,weights,biases,keep_prob): #define RNN
     fw_lstm_cell=tf.nn.rnn_cell.BasicLSTMCell(n_hidden,forget_bias=1.0,state_is_tuple=True) #forward , state_is_tuple=True
     fw_lstm_cell=tf.nn.rnn_cell.DropoutWrapper(fw_lstm_cell,output_keep_prob=keep_prob) #use dropout
     bw_lstm_cell=tf.nn.rnn_cell.BasicLSTMCell(n_hidden,forget_bias=1.0,state_is_tuple=True) #backward , state_is_tuple=True
-    bw_lstm_cell=tf.nn.rnn_cell.DropoutWrapper(fw_lstm_cell,output_keep_prob=keep_prob) #use dropout
+    bw_lstm_cell=tf.nn.rnn_cell.DropoutWrapper(bw_lstm_cell,output_keep_prob=keep_prob) #use dropout
 
     #bidirectional LSTM
     cell_fw=tf.nn.rnn_cell.MultiRNNCell([fw_lstm_cell], state_is_tuple=True)
