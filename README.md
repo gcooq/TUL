@@ -11,9 +11,9 @@ command as: 'word2vec -train gowalla_scopus_real.dat output gowalla_em_250.dat -
 * Training process:
 We choose the 201 users' sub-trajectories, split these to  training data(about 90) and test data (about 10%).
 The new code with tensorflow>=1.0, you can run it easily. and also some records will stored by the code (including model, train data and sample results).  With the restriction of my e-mail system, you can download from：
-<br>
+
 https://drive.google.com/open?id=128fCjfKPcqnKFhuYZiRFIqKmNnXx5NsZ
-<br>
+
 For GRU_S, GRU, LSTM_S, you just change the fucntionin 'RNN', tensorflow has GRU, 2-layer GRU.
 # Related Literature
 
