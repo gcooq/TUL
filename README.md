@@ -2,7 +2,7 @@
 Identifying Human Mobility via Trajectory Embeddings
 # Environment
 * python 2.7
-* Tensorflow 1.0 or ++ （updated now）
+* Tensorflow 1.0 or ++ （updated now 2018.05.22)
 # Usage
 * word2vec:
 Use the pip tool 'pip install word2vec'，The data tha we have removed the POIs which the frequency is less than a threshold.
@@ -12,7 +12,7 @@ command as: 'word2vec -train gowalla_scopus_real.dat output gowalla_em_250.dat -
 We choose the 201 users' sub-trajectories, split these to  training data(about 90) and test data (about 10%).
 The new code with tensorflow>=1.0, you can run it easily. and also some records will stored by the code (including model, train data and sample results), you can download from：
 
-https://drive.google.com/open?id=128fCjfKPcqnKFhuYZiRFIqKmNnXx5NsZ
+https://drive.google.com/file/d/128fCjfKPcqnKFhuYZiRFIqKmNnXx5NsZ/view?usp=sharing
 
 For GRU_S, GRU, LSTM_S, you just change the fucntionin 'RNN', tensorflow has GRU, 2-layer GRU.
 # Related Literature
