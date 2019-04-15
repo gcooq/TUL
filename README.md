@@ -15,6 +15,8 @@ The new code with tensorflow>=1.0, you can run it easily. and also some records 
 https://drive.google.com/file/d/128fCjfKPcqnKFhuYZiRFIqKmNnXx5NsZ/view?usp=sharing
 
 For GRU_S, GRU, LSTM_S, you just change the fucntionin 'RNN', tensorflow has GRU, 2-layer GRU.
+# Importance
+Please decrease the initial learning rate after finishing some epoches, such as 80 epoches. Then the performance will be better.
 # Related Literature
 
 <br>
